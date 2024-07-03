@@ -12,11 +12,11 @@ const Navigation = () => {
         <div className="logo"></div>
         <ul>
           <li>
-            <span className="link-text">Popular</span>
+            <span className="link-text">HOME</span>
           </li>
 
           <li>
-            <span className="link-text">Fun Facts</span>
+            <span className="link-text">TRENDING</span>
           </li>
         </ul>
       </div>
