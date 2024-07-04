@@ -12,14 +12,24 @@ const Navigation = () => {
         <div className="logo"></div>
         <ul>
           <li>
-            <span className="link-text">HOME</span>
+            <Link to="/">
+              <span className="link-text">HOME</span>
+            </Link>
           </li>
 
           <li>
-            <span className="link-text">TRENDING</span>
+            <Link to="/trending">
+              <span className="link-text">TRENDING</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/all-product">
+              <span className="link-text">ALL PRODUCT </span>
+            </Link>
           </li>
         </ul>
       </div>
+      <Outlet />
     </Fragment>
   );
 };
