@@ -1,5 +1,7 @@
 import "./ProductPopUp.css";
+import { useProductData } from "../dataflowContext/ProductDataContext";
 const ProductPopUp = ({ item, closePopup }) => {
+  const { addProduct } = useProductData();
   return (
     <div>
       <div className="popup-content">
@@ -13,7 +15,15 @@ const ProductPopUp = ({ item, closePopup }) => {
           <div className="popup-summary">
             <h2>{item.name}</h2>
             <p>Price: {item.price}</p>
-            <button className="button-1">Add to cart</button>
+            <button
+              className="button-1"
+              onClick={() => {
+                addProduct(item);
+                console.log("sucessfully add product", item);
+              }}
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./ProductList.components.css";
 import ProductPopUp from "../PopUp/ProductPopUp";
+import { useProductData } from "../dataflowContext/ProductDataContext";
 
 const ProductList = () => {
   const [activeProduct, setActiveProduct] = useState(null);
@@ -11,7 +12,7 @@ const ProductList = () => {
     {
       id: 1,
       image: "./img/products/jordan-1.webp",
-      name: "Kaptir 3.0 Shoes",
+      name: "Jordan 1",
       category: "",
       summary: "",
       price: "$260.00",
@@ -23,34 +24,34 @@ const ProductList = () => {
       name: "Nike Jordan 1 Retro High OG SP Travis Scott Mocha",
       category: "",
       summary: "",
-      price: "$400.00",
+      price: "$1,650.00",
       ingredient: "",
     },
     {
       id: 3,
-      image: "https://placehold.co/600x400.png",
-      name: "LWST Shoes",
+      image: "./img/products/jordan-1-dior.webp",
+      name: "Jordan 1 Retro High Dior",
       category: "",
       summary: "",
-      price: "",
+      price: "$6,485.00",
       ingredient: "",
     },
     {
       id: 4,
-      image: "https://placehold.co/600x400.png",
-      name: "SL 72 RS Shoes",
+      image: "./img/products/jordan-1-blue-og.webp",
+      name: "Air Jordan 1 Retro High OG 'Game Royal'",
       category: "",
       summary: "",
-      price: "",
+      price: "$275.00",
       ingredient: "",
     },
     {
       id: 5,
-      image: "https://placehold.co/600x400.png",
-      name: "Handball Spezial Shoes",
+      image: "./img/products/travis-fragment.webp",
+      name: "Fragment Design x Travis Scott",
       category: "",
       summary: "",
-      price: "",
+      price: "$2,089.00",
       ingredient: "",
     },
   ];
@@ -70,6 +71,7 @@ const ProductList = () => {
             </figure>
             <div className="article-body">
               <h3>{item.name}</h3>
+              <h4>{item.price}</h4>
             </div>
           </div>
         </article>

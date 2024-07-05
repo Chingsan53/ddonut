@@ -27,6 +27,11 @@ const Navigation = () => {
               <span className="link-text">ALL PRODUCT </span>
             </Link>
           </li>
+          <li>
+            <Link to="/shopping-cart">
+              <span className="link-text">CART </span>
+            </Link>
+          </li>
         </ul>
       </div>
       <Outlet />
