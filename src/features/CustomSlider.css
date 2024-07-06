@@ -1,0 +1,43 @@
+/* CustomSlider.css */
+
+.slick-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-arrows button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+}
